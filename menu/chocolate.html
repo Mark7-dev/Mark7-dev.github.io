@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate | CGS lollies</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="../cart.html"><img src="../images/cart.png" width="30px" height="30px"></a>
+        <img src="../images/menu.png" onclick="menutoggle()" class="menu-icon">
+    </div>
+
+</div>
+
+
+<!--------------single-product--------------->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="https://cdn.shopify.com/s/files/1/0430/5784/0288/products/71zxXz3ba-S._SL1500_1024x1024.jpg?v=1639741672" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="https://www.cadbury.com.au/media/catalog/product/m/o/mond_9300617322863-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=519&width=712&canvas=712:519" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="https://www.cadbury.com.au/media/catalog/product/m/o/mond_9300617408741-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=519&width=712&canvas=712:519" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="https://www.eastereggwarehouse.com.au/wp-content/uploads/2018/07/Cadbury-Turkish-Delight-55g.jpg" class="small-img" width="100%">
+                </div>
+                <div class="small-img-col">
+                    <img src="https://cdn.shopify.com/s/files/1/0015/0611/5642/products/Untitleddesign_31.png?v=1599021210" class="small-img" width="100%">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-2">
+            <p>Home / Chocolate</p>
+            <h1>Chocolate</h1>
+            <h4>$0.50</h4>
+            <select onchange="document.getElementById('preview').src = this.value">
+                <option selected disabled>Select an option</option>
+                <option value="https://cdn.shopify.com/s/files/1/0430/5784/0288/products/71zxXz3ba-S._SL1500_1024x1024.jpg?v=1639741672">Dairy Milk Chocolate</option>
+                <option value="https://www.cadbury.com.au/media/catalog/product/m/o/mond_9300617322863-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=519&width=712&canvas=712:519">Crunchie</option>
+                <option value="https://www.cadbury.com.au/media/catalog/product/m/o/mond_9300617408741-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=519&width=712&canvas=712:519">Cherry Ripe</option>
+                <option value="https://cdn.shopify.com/s/files/1/0015/0611/5642/products/Untitleddesign_31.png?v=1599021210">Boost</option>
+            </select>
+            <br>
+            <br>
+            <img id="preview" height="200px">
+            <br>
+            <br>
+
+
+            <input type="number" value="1">
+            <a href="../cart.html" class="btn">Add To Cart</a>
+
+            <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>
+                Cadbury Crunchie gives you a sweet, chocolatey treat with a crunch.
+
+                Cherry ripe: Enjoy the Big Cherry Taste! The ripe juicy cherries and moist coconut smothered in Old Gold rich dark chocolate ensure a unique and delicious taste. Cadbury Cherry Ripe offers an indulgent and rich treat.
+
+                Boost: With a smooth choc centre packed with biscuits rolled in chewy caramel covered in Cadbury milk chocolate, Cadbury Boost is perfect for intense chocolate hit!
+
+                Turkish Delight: Fry's Turkish Delight a soft Turkish Delight centre coated in milk chocolate with 60% less fat and always has been.
+
+            </p>
+        </div>
+    </div>
+</div>
+<!----------------- title -------------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+
+</div>
+<!-------------- Our Products -------------->
+<div class="small-container">
+
+    <div class="row">
+        <div class="col-4">
+            <a href = "../menu/chips.html"><img src="https://redrockdeli.com.au/images/default-source/products/potato-chips-new/honey-chickenb27726682d004590a3767709cabcd178.png?sfvrsn=5030e682_4"></a>
+            <h4>Chips</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$1</p>
+        </div>
+        <div class="col-4">
+            <a href = "../menu/sherbet.html"><img src="../images/sherbet.png"></a>
+            <h4>Mini Sherbet</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$0.20</p>
+        </div>
+        <div class="col-4">
+            <a href = "../menu/sourp.html"><img src="https://www.bigw.com.au/medias/sys_master/images/images/hb3/hd1/16720798941214.jpg"></a>
+            <h4>Sour Patch Kids</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$5</p>
+        </div>
+        <div class="col-4">
+            <a href = "../menu/skittles.html"><img src="https://cdn11.bigcommerce.com/s-n3nb5pav2e/images/stencil/450x559/products/4158/1787/4653e8c6-2015-472b-a601-46bbd9c57a64_1.063513a8f09d7dc1509965ec72ac1174__27133.1640924727.jpg?c=2"></a>
+            <h4>Skittles</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>$1</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!----------Footer--------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="footer-col3">
+
+
+            </div>
+            <div class="footer-col4">
+
+
+            </div>
+        </div>
+        <hr>
+    </div>
+
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+
+    //-------------Produc Gallery------------
+
+    var ProductImg = document.getElementById("ProductImg");
+
+    var SmallImg = document.getElementsByClassName("small-img");
+
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+
+    }
+
+    //-------------End Produc Gallery------------
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
