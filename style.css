@@ -701,7 +701,8 @@ form a{
 }
 
 .leo {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab';
+    color: black;
 }
 
 .jun{
