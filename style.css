@@ -509,7 +509,7 @@ th:last-child{
     text-align: center;
     padding: 20px 0;
     margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -700,27 +700,6 @@ form a{
     justify-content: space-around;
 }
 
-.leo{
-
+.leo {
     font-family: 'Roboto Slab', serif;
-    
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

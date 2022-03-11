@@ -23,8 +23,8 @@
                </ul>
               </nav>
 
-              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="cart"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" alt="menu">
           </div>
            <div class="row">
 
@@ -126,7 +126,7 @@
                    <p>$0.50</p>
                </div> 
                <div class="col-4">
-                   <a href = "menu/chips.html"><img src="https://redrockdeli.com.au/images/default-source/products/potato-chips-new/honey-chickenb27726682d004590a3767709cabcd178.png?sfvrsn=5030e682_4"></a>
+                   <a href = "menu/chips.html"><img src="https://redrockdeli.com.au/images/default-source/products/potato-chips-new/honey-chickenb27726682d004590a3767709cabcd178.png?sfvrsn=5030e682_4" alt="Chips"></a>
                    <h4>Red Rock Deli Chips</h4>
                    <div class="rating">
                        <i class="fa fa-star"></i>
@@ -164,14 +164,14 @@
       <!-------------js for toggle menu-------------->
 
 <script>
-    
-    var MenuItems = document.getElementById("MenuItems");
-    
+
+    const MenuItems = document.getElementById("MenuItems");
+
     MenuItems.style.maxHeight = "0px";
     
     function menutoggle()
     {
-        if(MenuItems.style.maxHeight == "0px")
+        if(MenuItems.style.maxHeight === "0px")
             {
                 MenuItems.style.maxHeight = "200px";
             }else

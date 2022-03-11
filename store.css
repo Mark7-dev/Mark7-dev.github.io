@@ -448,7 +448,7 @@ nav ul li{
 
 .title{
     text-align: center;
-    margin: 0px auto 80px;
+    margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
     color: #555;
@@ -513,7 +513,7 @@ small{
 .testimonial .col-3{
     text-align: center;
     padding: 40px 20px 40px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform .5s;
 }
@@ -528,7 +528,7 @@ small{
 }
 .col-3 p{
     font-size: 12px;
-    margin: 12px 0px;
+    margin: 12px 0;
     color: #777;
 }
 
@@ -849,7 +849,7 @@ th:last-child{
     text-align: center;
     padding: 20px 0;
     margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 

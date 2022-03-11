@@ -18,13 +18,13 @@
                    <li><a href="account.html">Account</a></li>
                </ul>
               </nav>
-              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="cart"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" alt="menu">
           </div>
           
           
        </div>
-       
+
        
 <!--------------Cart Items details--------------->
 <div class="accout-page">
@@ -44,16 +44,26 @@
                  </div>
                  
                <form id="LoginForm">
-                   <input type="text" placeholder="username">
-                   <input type="password" placeholder="Password">
+                   <label>
+                       <input type="text" placeholder="username">
+                   </label>
+                   <label>
+                       <input type="password" placeholder="Password">
+                   </label>
                    <button type="submit" class="btn">Login</button>
                    <a href="">Forgot password</a>
                </form>
 
                <form id="RegForm">
-                   <input type="text" placeholder="username">
-                   <input type="email" placeholder="Email">
-                   <input type="password" placeholder="Password">
+                   <label>
+                       <input type="text" placeholder="username">
+                   </label>
+                   <label>
+                       <input type="email" placeholder="Email">
+                   </label>
+                   <label>
+                       <input type="password" placeholder="Password">
+                   </label>
                    <button type="submit" class="btn">Register</button>
                </form>
               </div>
@@ -85,13 +95,13 @@
 <!-------------js for toggle menu-------------->
 
 <script>
-    var MenuItems = document.getElementById("MenuItems");
-    
+    const MenuItems = document.getElementById("MenuItems");
+
     MenuItems.style.maxHeight = "0px";
     
     function menutoggle()
     {
-        if(MenuItems.style.maxHeight == "0px")
+        if(MenuItems.style.maxHeight === "0px")
             {
                 MenuItems.style.maxHeight = "200px";
             }else
@@ -103,20 +113,21 @@
 </script>
 <!------------------- form toggle ----------->
     <script>
-        var LoginForm = document.getElementById("LoginForm");
-        var RegForm = document.getElementById("RegForm");
-        var Indicator = document.getElementById("indicator");
-        
+        const LoginForm = document.getElementById("LoginForm");
+        const RegForm = document.getElementById("RegForm");
+        const Indicator = document.getElementById("indicator");
+
         function register(){
                 RegForm.style.transform = "translateX(0px)";
                 LoginForm.style.transform = "translateX(0px)";
                 Indicator.style.transform = "translateX(100px)"
-            };
+            }
+
         function login(){
                 RegForm.style.transform = "translateX(300px)";
                 LoginForm.style.transform = "translateX(300px)";
                 Indicator.style.transform = "translateX(0px)"
-            };
+            }
             
     </script>
     
