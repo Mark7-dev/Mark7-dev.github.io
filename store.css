@@ -205,15 +205,6 @@ html, body {
     margin: 30px;
 }
 
-.shop-item-title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-}
 
 .shop-item-image {
     height: 250px;
@@ -448,7 +439,7 @@ nav ul li{
 
 .title{
     text-align: center;
-    margin: 0 auto 80px;
+    margin: 0px auto 80px;
     position: relative;
     line-height: 60px;
     color: #555;
@@ -479,6 +470,17 @@ h4{
     color: #555;
     font-weight: normal;
 }
+
+.shop-item-title{
+
+    color: #555;
+    font-weight: normal; 
+
+
+
+}
+
+
 .col-4 p{
     font-size: 14px;
 }
@@ -513,7 +515,7 @@ small{
 .testimonial .col-3{
     text-align: center;
     padding: 40px 20px 40px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform .5s;
 }
@@ -528,7 +530,7 @@ small{
 }
 .col-3 p{
     font-size: 12px;
-    margin: 12px 0;
+    margin: 12px 0px;
     color: #777;
 }
 
@@ -711,12 +713,6 @@ select:focus{
     padding: 20px;
 }
 
-.single-product h4{
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: bold;
-}
-
 .single-product select{
     display: block;
     padding: 10px;
@@ -849,7 +845,7 @@ th:last-child{
     text-align: center;
     padding: 20px 0;
     margin: auto;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -1009,15 +1005,6 @@ form a{
     margin: 30px;
 }
 
-.shop-item-title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 15px;
-}
 
 .shop-item-image {
     height: 250px;
@@ -1049,13 +1036,15 @@ form a{
 
 }
 
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
 
-
-
-
-
-
-
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
 
 
 
