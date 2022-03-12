@@ -55,6 +55,21 @@
             <h1>Skittles & Drink Combo</h1>
             <h4>$1</h4>
 
+            <select onchange="document.getElementById('preview').src = this.value">
+                <option selected disabled>Select an option</option>
+                <option value="../images/skittleslemonade.png">Skittles & Lemonade</option>
+                <option value="../images/skittlecream.png">Skittles & Kirks Creaming Soda</option>
+                <option value="../images/skittlebeer.png">Skittles & Kirks Ginger Beer</option>
+                <option value="../images/skittlepas.png">Skittles & Kirks Pasito</option>
+                <option value="../images/skittlelem.png">Skittles & Kirks Lemon Squash</option>
+            </select>
+            <br>
+            <br>
+            <img id="preview" height="200px">
+
+            <br>
+            <br>
+
 
             <input type="number" value="1">
             <a href="../cart.html" class="btn">Add To Cart</a>
