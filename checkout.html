@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    <input type="email" id="checkout-email">
+</label>
+<input type="button" title="checkout" onclick="checkout()">
+</body>
+</html>
+
+<script>
+    function checkout() {
+        const to = "mailto:me*example.com".replace("*", "@")
+        const cc = document.getElementsByName("checkout-email")[0]
+
+        const subject =  "&subject=" + encodeURIComponent("Order of")
+        const body = "&body=" + encodeURIComponent(document.getElementById('myText').value)
+
+        window.location.href = to + subject;
+    }
+</script>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boost & Mars Bar | CGS lollies</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="../store.js" async></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -56,10 +57,14 @@
             <h4>$2</h4>
 
 
-            <input type="number" value="1">
-            <a href="../cart.html" class="btn">Add To Cart</a>
+            <label>
+                <input type="number" value="1" id="quantity">
+            </label>
 
-            <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+            <input type="button" value="Add To Cart" onclick="addBoostToCart()" class="btn">
+<!--            <a href="../cart.html" class="btn">Add To Cart</a>-->
+
+            <h3>Product Details<i class="fa fa-indent"></i></h3>
             <br>
         </div>
     </div>
@@ -158,13 +163,19 @@
 
 <script>
 
+    function addBoostToCart() {
+        let num = document.getElementById("quantity").value;
+        let url = "https://cdn0.woolworths.media/content/wowproductimages/large/225067.jpg"
+        addToCart(url, "boost bar", 2, num)
+    }
+
     var MenuItems = document.getElementById("MenuItems");
 
     MenuItems.style.maxHeight = "0px";
 
     function menutoggle()
     {
-        if(MenuItems.style.maxHeight == "0px")
+        if(MenuItems.style.maxHeight === "0px")
         {
             MenuItems.style.maxHeight = "200px";
         }else
@@ -173,11 +184,11 @@
         }
     }
 
-    //-------------Produc Gallery------------
+    //-------------Product Gallery------------
 
-    var ProductImg = document.getElementById("ProductImg");
+    const ProductImg = document.getElementById("ProductImg");
 
-    var SmallImg = document.getElementsByClassName("small-img");
+    const SmallImg = document.getElementsByClassName("small-img");
 
 
     SmallImg[0].onclick = function()
