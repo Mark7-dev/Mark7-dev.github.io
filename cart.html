@@ -1,106 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Purchase | Store</title>
-  <meta name="description" content="This is the description">
-  <link rel="stylesheet" href="store.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase | CGS lollies</title>
+  <link rel="stylesheet" href="store.css">
   <script src="store.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<div class="header">
-  <div class="container">
-    <div class="navbar">
-      <nav>
-        <ul id="MenuItems">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">All Products</a></li>
-          <li><a href="account.html">Account</a></li>
-        </ul>
-      </nav>
-
-      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="cart"></a>
-      <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" alt="menu">
-    </div>
-    <div class="row">
-
-      <div class="col-2">
-
-        <h1>CGS Lollies shop</h1>
-      </div>
-
-      <div class="col-2">
-
-      </div>
-
-    </div>
-
-  </div>
-</div>
+<div class="container">
+  <div class="navbar">
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="loyalty.html">Loyalty Program</a></li>
+        <li><a href="account.html">Account</a></li>
 
 
-<section class="container content-section">
-  <h2 class="section-header">Cart</h2>
-  <div class="cart-row">
-    <span class="cart-item cart-header cart-column">Item</span>
-    <span class="cart-price cart-header cart-column">Price</span>
-    <span class="cart-quantity cart-header cart-column">Quantity</span>
-  </div>
-  <div class="cart-items">
-  </div>
-  <div class="cart-total">
-    <strong class="cart-total-title">Total</strong>
-    <span class="cart-total-price">$0</span>
-  </div>
-  <button class="btn btn-primary btn-purchase" type="button">Purchase</button>
-</section>
+      </ul>
+    </nav>
+    <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+    <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
 
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="footer-col3">
-      </div>
-      <div class="footer-col4">
-      </div>
-    </div>
-    <hr>
+
   </div>
 
 </div>
+<!----------------- title -------------->
+<div class="small-container">
+  <div class="row row-2">
+    <h2>Purchase</h2>
+
+  </div>
 
 
-<!-------------js for toggle menu-------------->
+  <div class="row">
+    <div class="col-4">
 
-<script>
-  if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', ready)
-  } else {
-      ready()
-  }
+      <a href="menu/chips.html"><img class = "shop-item-image" src="https://redrockdeli.com.au/images/default-source/products/potato-chips-new/honey-chickenb27726682d004590a3767709cabcd178.png?sfvrsn=5030e682_4" alt = "chips"></a>
+      <h4 class = "shop-item-title">Red Rock Deli Chips</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$1</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/softdrinks.html"><img class = "shop-item-image" src="https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/SH10006353_schweppes_lemonade_200ml_24_cans.jpg" alt = "softdrinks"></a>
+      <h4 class = "shop-item-title">Soft drinks</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$2</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/sherbet.html"><img class = "shop-item-image" src="images/sherbet.png" alt = "sherbet"></a>
+      <h4 class = "shop-item-title">Mini Sherbets</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$0.20</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/sourp.html"><img class = "shop-item-image" src="https://www.bigw.com.au/medias/sys_master/images/images/hb3/hd1/16720798941214.jpg" alt = "sour patch kids"></a>
+      <h4 class = "shop-item-title">Sour Patch Kids</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$5</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+  </div>
 
-  function ready() {
-    displayCart()
-  }
+  <div class="row">
+    <div class="col-4">
+      <a href = "menu/chocolate.html"> <img class = "shop-item-image" src="https://cdn.shopify.com/s/files/1/0430/5784/0288/products/71zxXz3ba-S._SL1500_1024x1024.jpg?v=1639741672" alt = "chocolates"> </a>
+      <h4 class = "shop-item-title">Various selection of Chocolates</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$0.50</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/lollipops.html"><img class = "shop-item-image" src="https://res.cloudinary.com/dm8ly2rci/image/upload/v1530696961/chupachups.com.au/2018-07/Cola.png" alt = "lollipops"></a>
+      <h4 class = "shop-item-title">Lollipops</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$0.50</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/skittles.html"><img class = "shop-item-image" src="https://cdn11.bigcommerce.com/s-n3nb5pav2e/images/stencil/450x559/products/4158/1787/4653e8c6-2015-472b-a601-46bbd9c57a64_1.063513a8f09d7dc1509965ec72ac1174__27133.1640924727.jpg?c=2" alt = "skittles"></a>
+      <h4 class = "shop-item-title">Skittles</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$1</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/sourworms.html"><img class = "shop-item-image" src="https://www.mysweetbox.com.au/assets/full/SOURWORMS.jpg?20210204031413" alt = "Sour Gummy Worms" alt = "sour gummy worms"></a>
+      <h4 class = "shop-item-title">Sour Gummy Worms</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$0.50</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <a href = "menu/extragum.html"><img class = "shop-item-image" src="https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/EX10268_extra_spearmint_sugar_free_chewing_gum_14_pack.jpg" alt = "extra gum"></a>
+      <h4 class = "shop-item-title">Extra Gum</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$2</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+
+    <div class="col-4">
+      <a href = "menu/mentos.html"><img class = "shop-item-image" src="https://www.candywarehouse.com/item-images/129117-01_mini-mentos-pillow-packs-candy-1lb-bag.jpg" alt = "extra gum"></a>
+      <h4 class = 'shop-item-title'>Mentos</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$0.20</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+    <div class="col-4">
+      <a href = "menu/boost.html"><img class = "shop-item-image" src="https://cdn11.bigcommerce.com/s-h711h5/images/stencil/1280x1280/products/194/5460/mars_47g__89671.1628050190.jpg?c=2?imbypass=on" alt = "mars bar"></a>
+      <h4 class = "shop-item-title">Long Boost and Mars Bar</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$2</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+
+    </div>
+    <div class="col-4">
+      <a href = "menu/whizfiz.html"><img class = "shop-item-image" src="https://shop.coles.com.au/wcsstore/Coles-CAS/images/5/9/1/5911887.jpg" alt = "wizz fizz"></a>
+      <h4 class = "shop-item-title">Wizz Fizz</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <div class="shop-item-details">
+        <span class="shop-item-price">$0.75</span>
+        <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+      </div>
+      <br>
+    </div>
+  </div>
 
 
-  const MenuItems = document.getElementById("MenuItems");
+  <div class="small-container">
+    <h2 class="title">Combo's</h2>
+    <div class="row">
+      <div class="col-4">
+        <img class = "shop-item-image" src="images/sourpatchdrink.png" alt = "Sour Patch Kids and drink">
+        <h4 class = "shop-item-title"><a href="menu/chips.html">Sour Patch Kids + Soft Drink</a></h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
 
-  MenuItems.style.maxHeight = "0px";
+        </div>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$6 (Save $1)</span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+        </div>
+      </div>
+      <div class="col-4">
+        <img class = "shop-item-image" src="images/extradrink.png" alt = "extradrink">
+        <h4 class = shop-item-title>Gum + Soft Drink</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$3.50 (Save $0.50)</span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+        </div>
+      </div>
+      <div class="col-4">
+        <img class = "shop-item-image" src="images/sourpatchsherbet.png" alt = "Soft Drinks">
+        <h4 class = "shop-item-title">Sour Patch Kids + 4 Sherbet Sticks </h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$5.50 (Save $0.30)</span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+        </div>
+      </div>
+      <div class="col-4">
+        <img class = "shop-item-image" src="images/skittleslemonade.png" alt = "Sour Gummy Worms">
+        <h4 class = "shop-item-title">Skittles + Soft Drink</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="shop-item-details">
+          <span class="shop-item-price">$2.80 (Save $0.20)</span>
+          <button class="btn btn-primary shop-item-button" type="button">Add to cart</button>
+        </div>
 
-  function menutoggle()
-  {
-    if(MenuItems.style.maxHeight === "0px")
+      </div>
+    </div>
+
+
+
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="page-btn">
+      <span>1</span>
+
+      <span>&#8594;</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="footer-col3">
+
+
+        </div>
+        <div class="footer-col4">
+
+
+        </div>
+      </div>
+      <hr>
+    </div>
+
+  </div>
+
+
+
+  <!-------------js for toggle menu-------------->
+
+  <script>
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
     {
-      MenuItems.style.maxHeight = "200px";
-    }else
-    {
-      MenuItems.style.maxHeight = "0px"
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }else
+      {
+        MenuItems.style.maxHeight = "0px"
+      }
     }
-  }
 
+  </script>
 
-</script>
 
 
 </body>
 </html>
+
