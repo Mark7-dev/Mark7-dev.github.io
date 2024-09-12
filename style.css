@@ -1,0 +1,171 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Gotham SSm A,Arial,sans-serif;
+}
+
+span{
+    font-size: 3em;
+    margin-bottom: 0;
+    font-family: Gotham SSm A,Arial,sans-serif;
+    font-weight: bold;
+    color: #c41616;
+}
+.background {
+    background-image: url('images/highway.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%) brightness(40%);
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+h2 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#top{
+    text-align: center;
+}
+
+header {
+    padding: 0.8em;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    line-height: 1;
+    background: linear-gradient(to right, #0078ca, #482d8d)
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image {
+    width: 41%;
+    height: auto;
+}
+
+#standard-drinks{
+    width: 72%;
+}
+
+
+h2 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+#list{
+    font-size: 20px;
+}
+
+.no-underline {
+    text-decoration: none;
+    color: navy; /* Adjust the color to match your branding */
+    font-weight: bold; /* Optional: to make it stand out */
+}
+
+/* Add a hover effect to change the color when the mouse hovers over */
+a.no-underline:hover {
+    color: purple; /* A different shade of purple */
+}
+p{
+    text-align: justify;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.hidden-bottom {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+@media(prefers-reduced-motion){
+    .hidden-left, .hidden-bottom{
+        transition: none;
+    }
+}
+
+h3{
+    font-size: 29px;
+}
