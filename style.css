@@ -85,6 +85,49 @@ header nav ul li a {
     font-size: 18px;
 }
 
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    /*font-size: 24px;*/
+    /*font-weight: bold;*/
+    width: 10%;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.nav-links a:hover {
+    color: #0056b3;
+}
+.nav-icons {
+    display: flex;
+    gap: 10px;
+}
+.nav-icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.login-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 .content-wrapper {
     width: 1000px;
