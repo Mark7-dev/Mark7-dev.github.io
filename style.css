@@ -161,6 +161,13 @@ header nav ul li a {
     width: 72%;
 }
 
+.image-left {
+    float: right;
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
 h2 {
     font-size: 2.5em;
